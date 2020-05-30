@@ -4,39 +4,57 @@
   
     
     <entry>
-      <title>hexo主题与Gitalk</title>
-      <link href="/2020/05/29/hexo%E4%B8%BB%E9%A2%98%E4%B8%8EGitalk/"/>
-      <url>/2020/05/29/hexo%E4%B8%BB%E9%A2%98%E4%B8%8EGitalk/</url>
+      <title>Hexo主题与Gitalk</title>
+      <link href="/2020/05/23/Hexo%E4%B8%BB%E9%A2%98%E4%B8%8EGitalk/"/>
+      <url>/2020/05/23/Hexo%E4%B8%BB%E9%A2%98%E4%B8%8EGitalk/</url>
       
-        <content type="html"><![CDATA[<h1 id="Hexo主题配置"><a href="#Hexo主题配置" class="headerlink" title="Hexo主题配置"></a>Hexo主题配置</h1><p>一、我们现在的博客是初始化的主题，所以我们要给Hexo换上新装。Hexo主题在官网有很多，大家可以登录查看<a href="https://hexo.io/themes/" target="_blank" rel="noopener">官网链接</a>。</p><p>有自己中意的主题以后，前往作者的Github,点击：“clone or download”，把文件夹下载到自己所创建的博客“<strong>themes</strong>”文件中。</p><p><a href="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200524115430.jpg" target="_blank" rel="noopener"> <img src="" alt="6"></a></p><p>二、进入自己所创建的博客文件夹中，找到“_config.yml“文件，在这里我推荐大家<strong>“Typora”</strong>软件打开这个文件，以及后期的博文，我都推荐大家使用<strong>“Tpyora”</strong>。</p><p>利用查找功能找到：Themes的主题配置。将主题Themes改成：自己所下载的主题名称。</p><p><a href="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200524115452.jpg" target="_blank" rel="noopener"> <img src="" alt="7"></a></p><h1 id="Gitalk开启评论功能"><a href="#Gitalk开启评论功能" class="headerlink" title="Gitalk开启评论功能"></a>Gitalk开启评论功能</h1><p>一、新建仓库</p><p>点击<strong><em>你的用户名\</em></strong>，定位到github用户主页，新建一个仓库</p><p><a href="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200524114317.png" target="_blank" rel="noopener"> <img src="" alt="1"></a></p><p>点击<strong><em>New\</em></strong>之后，你应该看到</p><p><a href="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200524114431.png" target="_blank" rel="noopener"> <img src="" alt="4"></a></p><p>二、注册应用</p><p>Gitalk评论插件的授权机制依赖于<code>OAuth Application</code>，故使用Gitalk之前注册新应用。<a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">注册链接</a></p><ul><li>点击<strong><em>注册链接\</em></strong>之后，你应该看到</li></ul><p><a href="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200524114330.png" target="_blank" rel="noopener"> <img src="" alt="2"></a></p><p>点击<strong><em>Register application\</em></strong>之后，你应该看到</p><p><a href="https://raw.githubusercontent.com/SCX-MI/tu-BED/master/20200524114346.png" target="_blank" rel="noopener"> <img src="" alt="3"></a></p><p>请复制、保留<code>Client ID</code>和<code>Client Secret</code>的值（相应字段下方的字符串。<del>此处Teach-ple应用我已删除</del>）</p><p>三、主题配置</p><p>现在，请打开主题目录下的<code>_config.yml</code>文件，配置Gitalk评论插件的参数</p><p>四、本地测试</p><p>hexo g<br>hexo s</p><p><code>hexo s</code>本地测试以检查参数是否设置错误，<code>hexo d</code>部署以正常使用。（第一次使用，请登陆初始化）</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>hexo本地搭建</title>
-      <link href="/2020/03/05/hexo%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BA/"/>
-      <url>/2020/03/05/hexo%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BA/</url>
-      
-        <content type="html"><![CDATA[<p>本博主第一篇文章，主要介绍：为何使用hexo。如何进行hexo本地的搭建以及遇到的问题，解决方案。</p><h1 id="为何使用Hexo"><a href="#为何使用Hexo" class="headerlink" title="为何使用Hexo"></a>为何使用Hexo</h1><p>目前网络有形形色色的博客，我们在这些平台的注册博客，发表文章，如果后来平台消失，我们发表的宝贵文章，也随之消失。</p><p>我也将会在hexo 中记录自己学习心得，作为自己的“北大荒”。</p><h1 id="Hexo本地搭建"><a href="#Hexo本地搭建" class="headerlink" title="Hexo本地搭建"></a>Hexo本地搭建</h1><h2 id="环境的搭建"><a href="#环境的搭建" class="headerlink" title="环境的搭建"></a>环境的搭建</h2><p>事物的运行都需要一个环境，所以要想让hexo运行就需要为其搭建一个环境。</p><p>Node.js,和Git是hexo环境搭建的主要的软件。</p><p>一、安装<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">Node.js</a>去官网选择最新的版本，安装完成后在CMD指令窗口输入指令：”<strong><em>node -v\</em></strong>“。</p><p> 等待电脑给出 Node 的版本号，如若给出则安装成功。</p><p>二、安装Git</p><p> 安装  <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>,完成后在CMD窗口输入“<strong>Git</strong>”指令。</p><p>如若出现上图，则表示Git安装成功。</p><h2 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h2><p>环境搭建完成后，我们就要进行Hexo的安装。</p><p>在CMD窗口输入“<strong>npm install hexo-cli -g</strong>”。进行安装。</p><p>安装完成后如果可以看到hexo-cli的版本号，则表示安装成功。</p><p>上图可以看到Hexo的版本号，代表已经安装成功。</p><h2 id="本地博客的创建"><a href="#本地博客的创建" class="headerlink" title="本地博客的创建"></a>本地博客的创建</h2><p>所有准备工作完成后，我们就要进行本地博客的创建。</p><p>一、首先在CMD指令窗口输入：<strong>md blog</strong>  ，这个指令是创建一个名为”blog”的文件夹。建议将此文件夹创建在其余盘中。</p><p>二、初始化博客：分别在CMD中依次输入：</p><p><em>plain</em></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd bloghexo init</span><br></pre></td></tr></table></figure><p>若实验结果出现“Start blogging with Hexo!”字符串，则表示初始化成功且可以开始写博客了。<strong>注意：在初始化Hexo博客之前，必须保证根目录为空,否则无法成功初始化。</strong></p><p>如若出现上图则表示博客创建成功。</p><p>三、本地博客预览</p><p>在CMD窗口输入指令：”<strong>hexo s</strong>“</p><p>若结果发现有”Hexo is running at <code>http://localhost:4000/</code>字符串，则表示启动成功，Hexo当前就运行在上述网址。</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="Hexo主题配置"><a href="#Hexo主题配置" class="headerlink" title="Hexo主题配置"></a>Hexo主题配置</h1><p>一、我们现在的博客是初始化的主题，所以我们要给Hexo换上新装。Hexo主题在官网有很多，大家可以登录查看<a href="https://hexo.io/themes/" target="_blank" rel="noopener">官网链接</a>。</p><p>有自己中意的主题以后，前往作者的Github,点击：“clone or download”，把文件夹下载到自己所创建的博客“<strong>themes</strong>”文件中。</p><p>二、进入自己所创建的博客文件夹中，找到“_config.yml“文件，在这里我推荐大家<strong>“Typora”</strong>软件打开这个文件，以及后期的博文，我都推荐大家使用<strong>“Tpyora”</strong>。</p><p>利用查找功能找到：Themes的主题配置。将主题Themes改成：自己所下载的主题名称。</p><h1 id="Gitalk开启评论功能"><a href="#Gitalk开启评论功能" class="headerlink" title="Gitalk开启评论功能"></a>Gitalk开启评论功能</h1><p>一、新建仓库</p><p>点击<strong><em>你的用户名\</em></strong>，定位到github用户主页，新建一个仓库</p><p>点击<strong><em>New\</em></strong>之后，你应该看到</p><p>二、注册应用</p><p>Gitalk评论插件的授权机制依赖于<code>OAuth Application</code>，故使用Gitalk之前注册新应用。<a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">注册链接</a></p><ul><li>点击<strong><em>注册链接\</em></strong>之后，你应该看到</li></ul><p>点击<strong><em>Register application\</em></strong>之后，你应该看到</p><p>请复制、保留<code>Client ID</code>和<code>Client Secret</code>的值（相应字段下方的字符串。<del>此处Teach-ple应用我已删除</del>）</p><p>三、主题配置</p><p>现在，请打开主题目录下的<code>_config.yml</code>文件，配置Gitalk评论插件的参数</p><p>四、本地测试</p><p>hexo g<br>hexo s</p><p><code>hexo s</code>本地测试以检查参数是否设置错误，<code>hexo d</code>部署以正常使用。（第一次使用，请登陆初始化）</p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
       
     </entry>
     
     
     
     <entry>
-      <title>Hello World</title>
-      <link href="/2020/03/04/hello-world/"/>
-      <url>/2020/03/04/hello-world/</url>
+      <title>Hexo上传至Github</title>
+      <link href="/2020/05/23/Hexo%E4%B8%8A%E4%BC%A0%E8%87%B3Github/"/>
+      <url>/2020/05/23/Hexo%E4%B8%8A%E4%BC%A0%E8%87%B3Github/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>我们要将自己的博客上传至Github,首先我们需要将去注册我们GIithub账户。</p><ol><li><a href="https://github.com/" target="_blank" rel="noopener">注册Github</a>：右上角的<code>sign in</code>是登录，<code>sign up</code>是注册。</li><li><strong>新建仓库(Repository)</strong>:点击<code>create repository</code>按钮。</li><li>查看仓库配置：点击仓库右上角的<code>Settings</code>选项。</li><li>获取本机当前用户的SSH公钥：首先查看在本机的当前用户(操作系统的登录账户)目录下是否已经存在ssh公钥。<code>~</code>表示当前用户的家目录。</li></ol><p><strong>SSH公钥是是将Hexo关键所在，<a href="https://www.bilibili.com/video/BV1cW411A7Jx?p=4" target="_blank" rel="noopener">Github SSH公钥具体配置方法</a></strong></p><h1 id="绑定Hexo和Github"><a href="#绑定Hexo和Github" class="headerlink" title="绑定Hexo和Github"></a>绑定Hexo和Github</h1><p><strong>1.修改本地站点配置文件</strong>: 打开站点目录（<code>blog\</code>）下的<code>_config.yml</code>文件，将最后一部分修改为</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:  </span><br><span class="line">          type:  git</span><br><span class="line">          repo:  git@github.com:username&#x2F;username.github.io.git</span><br><span class="line">          branch:  master</span><br></pre></td></tr></table></figure><p><strong>2.安装关联hexo和git的工具</strong>:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git –save</span><br></pre></td></tr></table></figure><p>如果最后可以看到这个工具的版本号，则表明安装成功。</p><h1 id="Hexo升天"><a href="#Hexo升天" class="headerlink" title="Hexo升天"></a>Hexo升天</h1><p><strong>部署Hexo</strong>：执行以下命令:hexo d</p><p>这个命令会将本地博客根目录（<code>blog\</code>）下<code>public</code>文件夹里的所有文件上传至Github上的<code>username/username.github.io.git</code>这个仓库。</p><p><strong>2.博客预览</strong>：在浏览器中输入<code>https://username.github.io</code>,如果看到新页面则大功告成.</p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo本地搭建</title>
+      <link href="/2020/05/19/Hexo%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BA/"/>
+      <url>/2020/05/19/Hexo%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BA/</url>
+      
+        <content type="html"><![CDATA[<p>本博主第一篇文章，主要介绍：为何使用hexo。如何进行hexo本地的搭建以及遇到的问题，解决方案。</p><h1 id="为何使用Hexo"><a href="#为何使用Hexo" class="headerlink" title="为何使用Hexo"></a>为何使用Hexo</h1><p>目前网络有形形色色的博客，我们在这些平台的注册博客，发表文章，如果后来平台消失，我们发表的宝贵文章，也随之消失。</p><p>我也将会在hexo 中记录自己学习心得，作为自己的“北大荒”。</p><h1 id="Hexo本地搭建"><a href="#Hexo本地搭建" class="headerlink" title="Hexo本地搭建"></a>Hexo本地搭建</h1><h2 id="环境的搭建"><a href="#环境的搭建" class="headerlink" title="环境的搭建"></a>环境的搭建</h2><p>事物的运行都需要一个环境，所以要想让hexo运行就需要为其搭建一个环境。</p><p>Node.js,和Git是hexo环境搭建的主要的软件。</p><p>一、安装<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">Node.js</a>去官网选择最新的版本，安装完成后在CMD指令窗口输入指令：”<strong><em>node -v</em></strong>“。</p><p> 等待电脑给出 Node 的版本号，如若给出则安装成功。</p><p>二、安装Git</p><p> 安装  <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>,完成后在CMD窗口输入“<strong>Git</strong>”指令。</p><p>如若出现上图，则表示Git安装成功。</p><h2 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h2><p>环境搭建完成后，我们就要进行Hexo的安装。</p><p>在CMD窗口输入“<strong>npm install hexo-cli -g</strong>”。进行安装。</p><p>安装完成后如果可以看到hexo-cli的版本号，则表示安装成功。</p><p>上图可以看到Hexo的版本号，代表已经安装成功。</p><h2 id="本地博客的创建"><a href="#本地博客的创建" class="headerlink" title="本地博客的创建"></a>本地博客的创建</h2><p>所有准备工作完成后，我们就要进行本地博客的创建。</p><p>一、首先在CMD指令窗口输入：<strong>md blog</strong>  ，这个指令是创建一个名为”blog”的文件夹。建议将此文件夹创建在其余盘中。</p><p>二、初始化博客：分别在CMD中依次输入：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd blog</span><br><span class="line">hexo init</span><br></pre></td></tr></table></figure><p>若实验结果出现“Start blogging with Hexo!”字符串，则表示初始化成功且可以开始写博客了。<strong>注意：在初始化Hexo博客之前，必须保证根目录为空,否则无法成功初始化。</strong></p><p>如若出现上图则表示博客创建成功。</p><p>三、本地博客预览</p><p>在CMD窗口输入指令：”<strong>hexo s</strong>“</p><p>若结果发现有”Hexo is running at <code>http://localhost:4000/</code>字符串，则表示启动成功，Hexo当前就运行在上述网址。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
       
     </entry>
     
